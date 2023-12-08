@@ -11,7 +11,7 @@ require (
 	github.com/spf13/cobra v1.7.0
 	github.com/spf13/viper v1.10.1
 	google.golang.org/grpc v1.59.0
-	k8s.io/klog/v2 v2.110.1
+	k8s.io/klog/v2 v2.100.1
 )
 
 require (
