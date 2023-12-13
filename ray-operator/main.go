@@ -147,7 +147,7 @@ func main() {
 	// informers cache, and for the API server / etcd, by reducing the number of watch events.
 	// For example, KubeRay is only interested in the batch Jobs it creates when reconciling RayJobs,
 	// so the controller sets the app.kubernetes.io/created-by=kuberay-operator label on any Job it creates,
-	// and that label is provided to the manager cache as a selector for Job resources.
+	// and that label is provided to the manager cache as a selector for Job resources
 	selectorsByObject, err := cacheSelectors()
 	exitOnError(err, "unable to create cache selectors")
 	options.Cache.ByObject = selectorsByObject
